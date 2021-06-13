@@ -1,0 +1,91 @@
+.App {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  flex-direction: column;
+  overflow: auto;
+}
+.room {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 500px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-icons {
+  width: 30px;
+  height: 30px;
+  margin: 0px 0.5rem;
+}
+
+.header {
+  display: flex;
+  color: #23357c;
+  margin-bottom: 0.3rem;
+}
+
+.fields {
+  padding: 0.7rem;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.each-feild {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 0.8rem 0px;
+}
+.each-feild:last-child {
+  border-bottom: none;
+}
+.field-type-header,
+.operations {
+  display: flex;
+}
+
+.bolder {
+  font-size: 20px;
+  font-weight: 900;
+  color: #23357c;
+}
+h2.bolder {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.operations .icon-button {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  margin: 0px 1em;
+  cursor: pointer;
+}
+.operations .icon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.icon-button .room-icons {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+.icon-button.minus {
+  background: #23357c;
+  padding: 6px;
+}
+.icon-button.plus {
+  background: #e7415c;
+}
+.count {
+  margin: 0px 0.5rem;
+}
